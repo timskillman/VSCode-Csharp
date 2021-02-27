@@ -29,7 +29,8 @@ d. Open Visual Studio Code from the terminal with ..
 ~~~
 code .
 ~~~
-e. Create a new file by selecting the 'New File' icon (on the 'HELLOWORLD' tab)\n
+e. Create a new file by selecting the 'New File' icon (on the 'HELLOWORLD' tab)
+
 f. Now enter the following C# program as a test ..
 ~~~
 using System;
