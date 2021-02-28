@@ -1,9 +1,9 @@
 **How to run and debug C# programs in Visual Studio Code on the Raspberry Pi**
 
 Now that we have an official Visual Studio Code on the Raspberry Pi I wanted to program in C#.
-However, I found that Visual Studio Code doesn't come with 'out of the box' configurations for C# so, as you do, I had to spend several hours on the web finding out how to do it!
+However, I found that Visual Studio Code doesn't come with 'out of the box' configurations for C# so, as you do, I had to spend a while working out how to do it!
 
-Here is a step-by-step process to install, configure, run and debug a C# program:
+Here is a step-by-step process to install, configure, run and debug a C# program on the Raspberry Pi:
 
 **1. Install VS Code**
 
@@ -13,6 +13,9 @@ Here is a step-by-step process to install, configure, run and debug a C# program
 ~~~
 sudo apt-get install mono-complete
 ~~~
+
+**3. Install 'Mono Debug' extension in VS Code**
+
 
 **3. Create a C# program to run**
 
@@ -41,17 +44,16 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World on my Raspberry Pi!");
+            Console.WriteLine("Hello World!");
         }
     }
 }
 ~~~
 ... and save it as '**HelloWorld.cs**' in a folder such as 'HelloWorld'
 
-**4. Add .vscode folder with launch and task JSON scripts**
+**4. Add the launch.json and task.json scripts**
 
-a. In your 'HelloWorld' folder create another folder '.vscode' next to your 'HelloWorld.cs' file
-b. Inside the '.vscode' folder ad the following two scripts;
+a. When about to run/debug, select 'Create launch.json script', modify it (as below) and save the script
 
 launch.json
 ~~~
@@ -76,6 +78,8 @@ launch.json
 }
 ~~~
 
+b. Create another script in the same '.vscode' folder and save as 'tasks.json' ..
+
 tasks.json
 ~~~
 {
@@ -97,4 +101,5 @@ tasks.json
 }
 ~~~
 
-5. 
+5. Run the program and/or add debug breakpoints to debug your program
+
