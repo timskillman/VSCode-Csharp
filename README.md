@@ -21,8 +21,11 @@ sudo apt-get install mono-complete
 **3. Install 'Mono Debug' extension in VS Code**
 
 a. Open Visual Studio Code from the Main menu -> Programming dropdown ..
+
 b. Select the 'Extensions' button on the left panel (4 squares button)
+
 c. Enter 'mono debug' in the search bar
+
 d. Install 'mono debug' (by Microsoft)
 
 **4. Create a C# program to run**
