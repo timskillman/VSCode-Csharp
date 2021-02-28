@@ -7,7 +7,8 @@ Here is a step-by-step process to install, configure, run and debug a C# program
 
 **1. Install VS Code**
 
-From the browser, navigate to https://code/visualstudio.com/Download
+From the browser, navigate to https://code.visualstudio.com/Download
+
 and install '.deb' 'ARM' (for 32 bit) or 'ARM 64' (if you know you have a 64 bit OS)
 
 **2. Install Mono**
