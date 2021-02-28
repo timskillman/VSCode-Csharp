@@ -51,7 +51,7 @@ namespace HelloWorld
 
 **5. Add the launch.json and task.json scripts**
 
-a. When about to run/debug, select 'Create launch.json script', modify it (as below) and save the script
+a. When about to run/debug, select 'Create a launch.json file', modify it (as below) and save the file ..
 
 launch.json
 ~~~
