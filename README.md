@@ -1,4 +1,4 @@
-**How to run and debug C# programs in Visual Studio Code on the Raspberry Pi**
+**How to Edit, Run and debug C# programs in Visual Studio Code on the Raspberry Pi**
 
 Now that we have an official Visual Studio Code on the Raspberry Pi I wanted to program in C#.
 However, I found that Visual Studio Code doesn't come with 'out of the box' configurations for C# so, as you do, I had to spend a while working out how to do it!
