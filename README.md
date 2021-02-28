@@ -7,34 +7,28 @@ Here is a step-by-step process to install, configure, run and debug a C# program
 
 **1. Install VS Code**
 
+From the browser, navigate to https://code/visualstudio.com/Download
+and install '.deb' 'ARM' (for 32 bit) or 'ARM 64' (if you know you have a 64 bit OS)
 
 **2. Install Mono**
 
+Opena terminal window and enter:
 ~~~
 sudo apt-get install mono-complete
 ~~~
 
 **3. Install 'Mono Debug' extension in VS Code**
 
+a. Open Visual Studio Code from the Main menu -> Programming dropdown ..
+b. Select the 'Extensions' button on the left panel (4 squares button)
+c. Enter 'mono debug' in the search bar
+d. Install 'mono debug' (by Microsoft)
 
-**3. Create a C# program to run**
+**4. Create a C# program to run**
 
-a. Open a terminal (shell) window
-b. Create a project folder such as 'HelloWorld' with ..
-~~~
-mkdir HelloWorld
-~~~
-c. Enter the folder with ..
-~~~
-cd HelloWorld
-~~~
-d. Open Visual Studio Code from the terminal with ..
-~~~
-code .
-~~~
-e. Create a new file by selecting the 'New File' icon (on the 'HELLOWORLD' tab)
+a. Create a new file (CTRL+N keys)
 
-f. Now enter the following C# program as a test ..
+b. Enter the following C# program as a test ..
 ~~~
 using System;
 
@@ -49,9 +43,9 @@ namespace HelloWorld
     }
 }
 ~~~
-... and save it as '**HelloWorld.cs**' in a folder such as 'HelloWorld'
+... and save as '**HelloWorld.cs**' in a 'HelloWorld' folder
 
-**4. Add the launch.json and task.json scripts**
+**5. Add the launch.json and task.json scripts**
 
 a. When about to run/debug, select 'Create launch.json script', modify it (as below) and save the script
 
@@ -101,5 +95,5 @@ tasks.json
 }
 ~~~
 
-5. Run the program and/or add debug breakpoints to debug your program
+**6. Run the program and/or add debug breakpoints to debug your program**
 
