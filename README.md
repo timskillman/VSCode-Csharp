@@ -46,6 +46,55 @@ namespace HelloWorld
     }
 }
 ~~~
+... and save it as '**HelloWorld.cs**' in a folder such as 'HelloWorld'
 
-**4. Add .vscode folder with scripts**
+**4. Add .vscode folder with launch and task JSON scripts**
 
+a. In your 'HelloWorld' folder create another folder '.vscode' next to your 'HelloWorld.cs' file
+b. Inside the '.vscode' folder ad the following two scripts;
+
+launch.json
+~~~
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "2.0.0",
+    "configurations": [
+
+        {
+            "name": "Mono Debug (console)",
+            "type": "mono",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/HelloWorld.exe",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole"
+        }
+    ]
+}
+~~~
+
+tasks.json
+~~~
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "mcs",
+            "type": "shell",
+            "args": [
+                "-debug",
+                "${workspaceFolder}/HelloWorld.cs"
+            ],
+            "group": "build"
+        }
+    ]
+}
+~~~
+
+5. 
