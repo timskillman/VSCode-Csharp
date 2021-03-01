@@ -5,20 +5,20 @@ However, I found that Visual Studio Code doesn't come with 'out of the box' conf
 
 Here is a step-by-step process to install, configure, run and debug a C# program on the Raspberry Pi:
 
-**1. Install VS Code**
+## 1. Install VS Code
 
 From the browser, navigate to https://code.visualstudio.com/Download
 
 and install '.deb' 'ARM' (for 32 bit) or 'ARM 64' (if you know you have a 64 bit OS)
 
-**2. Install Mono**
+## 2. Install Mono
 
 Opena terminal window and enter:
 ~~~
 sudo apt-get install mono-complete
 ~~~
 
-**3. Install 'Mono Debug' extension in VS Code**
+## 3. Install 'Mono Debug' extension in VS Code
 
 a. Open Visual Studio Code from the Main menu -> Programming dropdown ..
 
@@ -28,7 +28,7 @@ c. Enter 'mono debug' in the search bar
 
 d. Install 'Mono Debug' (by Microsoft)
 
-**4. Create a C# program to run**
+## 4. Create a C# program to run
 
 a. Create a new file (CTRL+N keys)
 
@@ -49,7 +49,7 @@ namespace HelloWorld
 ~~~
 ... and save as '**HelloWorld.cs**' in a 'HelloWorld' folder
 
-**5. Add the launch.json and task.json scripts**
+## 5. Add the launch.json and task.json scripts
 
 a. When about to run/debug, select 'Create a launch.json file', modify it (as below) and save the file ..
 
@@ -108,7 +108,7 @@ This does not include sub-folders; these must be specified separately, for examp
 **Note 2:** The '-out' file name must be the same as the 'program' file name in the launch.json.  
 Without specifying the out file, the 'exe' will be named as the first source file found in the folder.
 
-**6. Run the program and/or add debug breakpoints to debug your program**
+## 6. Run the program and/or add debug breakpoints to debug your program
 
 Select the  green 'Start Debugging' arrow to debug your program.
 If there are any breakpoints, the debugger will pause and allow you to examine
