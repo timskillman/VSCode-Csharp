@@ -53,7 +53,7 @@ namespace HelloWorld
 
 a. When about to run/debug, select 'Create a launch.json file', modify it (as below) and save the file ..
 
-launch.json
+**launch.json**
 ~~~
 {
     // Use IntelliSense to learn about possible attributes.
@@ -78,7 +78,7 @@ launch.json
 
 b. Create another script in the same '.vscode' folder and save as 'tasks.json' ..
 
-tasks.json
+**tasks.json**
 ~~~
 {
     // See https://go.microsoft.com/fwlink/?LinkId=733558
