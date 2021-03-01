@@ -1,4 +1,4 @@
-**How to Edit, Run and debug C# programs in Visual Studio Code on the Raspberry Pi**
+# How to Edit, Run and Debug C# programs in Visual Studio Code on the Raspberry Pi
 
 Now that we have an official Visual Studio Code on the Raspberry Pi I wanted to program in C#.
 However, I found that Visual Studio Code doesn't come with 'out of the box' configurations for C# so, as you do, I had to spend a while working out how to do it!
@@ -91,13 +91,16 @@ tasks.json
             "type": "shell",
             "args": [
                 "-debug",
-                "${workspaceFolder}/HelloWorld.cs"
+                "${workspaceFolder}/**.cs"
             ],
             "group": "build"
+            "-out:HelloWorld.exe"
         }
     ]
 }
 ~~~
+Note 1: '\*\*.cs' in the args list will compile all C# files in the folder
+Note 2: The '-out' file name must be the same as the 'program' file name in the launch.json
 
 **6. Run the program and/or add debug breakpoints to debug your program**
 
