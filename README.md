@@ -92,9 +92,9 @@ b. Create another script in the same '.vscode' folder and save as 'tasks.json' .
             "args": [
                 "-debug",
                 "${workspaceFolder}/**.cs"
+                "-out:HelloWorld.exe"
             ],
             "group": "build"
-            "-out:HelloWorld.exe"
         }
     ]
 }
