@@ -100,6 +100,7 @@ tasks.json
 }
 ~~~
 Note 1: '\*\*.cs' in the args list will compile all C# files in the folder
+
 Note 2: The '-out' file name must be the same as the 'program' file name in the launch.json
 
 **6. Run the program and/or add debug breakpoints to debug your program**
