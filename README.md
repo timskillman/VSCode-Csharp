@@ -111,5 +111,6 @@ Without specifying the out file, the 'exe' will be named as the first source fil
 ## 6. Run the program and/or add debug breakpoints to debug your program
 
 Select the  green 'Start Debugging' arrow to debug your program.
-If there are any breakpoints, the debugger will pause and allow you to examine
+
+If you have added breakpoints the debugger will pause and allow you to examine
 local variables and step through for example.
