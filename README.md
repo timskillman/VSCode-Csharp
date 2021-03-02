@@ -5,6 +5,8 @@ However, I found that Visual Studio Code doesn't come with 'out of the box' conf
 
 Here is a step-by-step process to install, configure, run and debug a C# program on the Raspberry Pi:
 
+You can also watch a video tutorial on YouTube: https://www.youtube.com/watch?v=8KHRSt7ixME
+
 ## 1. Install VS Code
 
 From the browser, navigate to https://code.visualstudio.com/Download
@@ -100,7 +102,7 @@ b. Create another script in the same '.vscode' folder and save as 'tasks.json' .
 }
 ~~~
 **Note 1:** '\*\*.cs' in the args list will compile all C# files in the folder.
-This does not include sub-folders; these must be specified separately, for example;
+This does not include sub-folders; these must added separately, for example;
 ~~~
 "${workspaceFolder}/SubFolder/**.cs"
 ~~~
